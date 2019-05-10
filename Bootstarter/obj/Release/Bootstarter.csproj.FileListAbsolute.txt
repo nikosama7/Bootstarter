@@ -1,0 +1,234 @@
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Bootstarter.dll.config
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Bootstarter.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Bootstarter.pdb
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\csc.exe
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\csc.exe.config
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\csc.rsp
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\csi.exe
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\csi.exe.config
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\csi.rsp
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.AppContext.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Console.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.IO.Compression.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.IO.Pipes.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.Claims.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.ValueTuple.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\vbc.exe
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\vbc.exe.config
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\vbc.rsp
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\VBCSCompiler.exe
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Antlr3.Runtime.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\EntityFramework.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\EntityFramework.SqlServer.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Newtonsoft.Json.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Owin.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Net.Http.Formatting.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.Helpers.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.Http.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.Http.WebHost.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.Mvc.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.Optimization.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.Razor.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.WebPages.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.WebPages.Razor.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\WebGrease.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Net.Http.Formatting.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.Http.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.Http.WebHost.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.Helpers.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.Mvc.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.Optimization.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.Razor.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.WebPages.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\System.Web.WebPages.Razor.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Newtonsoft.Json.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Antlr3.Runtime.pdb
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\EntityFramework.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\EntityFramework.SqlServer.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.Migrations.initialize.resources
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.Migrations.first.resources
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.Migrations.refactoring.resources
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.Migrations.creditcard.resources
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.Migrations.commnets.resources
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.csproj.GenerateResource.cache
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.csproj.CoreCompileInputs.cache
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.csproj.CopyComplete
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.dll
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.pdb
+C:\Users\Νίκος Αμαρτωλός\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.csprojAssemblyReference.cache
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Bootstarter.dll.config
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Bootstarter.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Bootstarter.pdb
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\csc.exe
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\csc.exe.config
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\csc.rsp
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\csi.exe
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\csi.exe.config
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\csi.rsp
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.AppContext.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Console.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.IO.Compression.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.IO.Pipes.AccessControl.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.IO.Pipes.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.AccessControl.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.Claims.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Security.Principal.Windows.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.ValueTuple.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Xml.XPath.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\vbc.exe
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\vbc.exe.config
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\vbc.rsp
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\VBCSCompiler.exe
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Antlr3.Runtime.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\EntityFramework.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\EntityFramework.SqlServer.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Newtonsoft.Json.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Owin.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Net.Http.Formatting.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.Helpers.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.Http.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.Http.WebHost.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.Mvc.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.Optimization.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.Razor.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.WebPages.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.WebPages.Razor.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\WebGrease.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Net.Http.Formatting.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.Http.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.Http.WebHost.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.Helpers.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.Mvc.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.Optimization.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.Razor.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.WebPages.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\System.Web.WebPages.Razor.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Newtonsoft.Json.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Antlr3.Runtime.pdb
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\EntityFramework.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\EntityFramework.SqlServer.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.csprojAssemblyReference.cache
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.Migrations.initialize.resources
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.Migrations.first.resources
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.Migrations.refactoring.resources
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.Migrations.creditcard.resources
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.Migrations.commnets.resources
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.csproj.GenerateResource.cache
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.csproj.CoreCompileInputs.cache
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.csproj.CopyComplete
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.dll
+C:\Users\nikos\Desktop\Bootstarter\Bootstarter\obj\Release\Bootstarter.pdb

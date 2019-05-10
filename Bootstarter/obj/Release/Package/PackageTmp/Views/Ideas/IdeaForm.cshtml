@@ -1,0 +1,119 @@
+﻿    @model Bootstarter.ViewModels.IdeaFormViewModel
+
+@{
+    ViewBag.Title = Model.Heading;
+}
+
+
+<h2  class="text-center text-info">@Model.Heading</h2>
+<br />
+
+@using (Html.BeginForm(Model.Action, "Ideas", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+    @Html.HiddenFor(m => m.Id)
+<div class="form-horizontal">
+   
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control col-sm-8" } })
+            @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Description, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.TextAreaFor(model => model.Description, 6, 60, new { htmlAttributes = new { @class = "form-control col-sm-8" } })
+            @Html.ValidationMessageFor(model => model.Description, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Image, new { htmlAttributes = new { @class = "form-control-file col-sm-8", @type = "file", accept=".jpg" } })
+            @Html.ValidationMessageFor(model => model.Image, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    @if (Model.Action == "Edit")
+    {
+        @Html.HiddenFor(m => m.Image)
+    }
+
+
+    @*<div class="form-group">
+        @Html.LabelFor(model => model.Goal, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Goal, new { htmlAttributes = new { @class = "form-control col-sm-8" } })
+            @Html.ValidationMessageFor(model => model.Goal, "", new { @class = "text-danger" })
+        </div>
+    </div>*@
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Goal, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="form-group">
+            <div class="input-group col-sm-8">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">&euro;</span>
+                </div>
+                @Html.EditorFor(model => model.Goal, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Goal, "", new { @class = "text-danger" })
+            </div>
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.StartDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.StartDate, new { htmlAttributes = new { @class = "form-control col-sm-6", @id = "start" } })
+            @Html.ValidationMessageFor(model => model.StartDate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.EndDate, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.EndDate, new { htmlAttributes = new { @class = "form-control col-sm-6", @id = "end" } })
+            @Html.ValidationMessageFor(model => model.EndDate, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-sm-8">
+            <input type="submit" value="Save" class="btn btn-primary" />
+        </div>
+    </div>
+</div>
+}
+
+<br/>
+<div>
+    @Html.ActionLink("Back to List", "Index",null, new { @class = "btn btn-secondary" })
+</div>
+
+@section Scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+    @Scripts.Render("~/bundles/lightpick")
+    <script>
+        window.onload = () => {
+            var options = { year: 'numeric', month: '2-digit', day: '2-digit' };
+            const myPicker = new Lightpick({
+                field: document.getElementById('start'),
+                secondField: document.getElementById('end'),
+                minDate: new Date(),
+                onSelect: function (start, end) {
+                    end = (end) ? end : start;
+                    document.getElementById('start').value = new Intl.DateTimeFormat('el-GR', options).format(start);
+                    document.getElementById('end').value = new Intl.DateTimeFormat('el-GR', options).format(end);
+                    days = Math.floor(Math.abs(new Date(end).getTime() - new Date(start).getTime()) / 1000 / 60 / 60 / 24) + 1;
+                    days = (days > 0) ? days : '';
+                }
+            });
+        }
+    </script>
+}

@@ -1,0 +1,118 @@
+﻿@model Bootstarter.ViewModels.IdeaIndexViewModel
+@{
+    ViewBag.Title = "Bootstarter";
+}
+
+<button id="myBtnToTop" title="Go to top">Top</button>
+<div class="image-index text-center">
+    @*<img src="~/UploadedFiles/fundraising-padley1.jpg" width="100%" />*@
+</div>
+<div class="image-bar">
+    @using (Html.BeginForm("Search", "Home", FormMethod.Get, new { @class = "form-inline my-2 my-lg-0" }))
+    {
+        @Html.TextBoxFor(m => m.Search, new { placeholder = "Explore", @id = "search", @class = "form-control mr-sm-3 col-5" })
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+    }
+</div>
+
+@*<div class="row">
+    <div class="col-md-4">
+        <h2>Ideas</h2>
+        <p>
+            [==={>>>>>>>>>>>>>>  <br />
+            {}===][>>>>>>>>>>>>>>>>>> <br />
+            }===[>>>>>>
+        </p>
+        <p><a class="btn btn-primary" href="@Url.Action("Index","Ideas", null)">View</a></p>
+    </div>
+</div>*@
+
+<h3 class="text-center"><u>RECOMMENDED</u></h3> <br/>
+<div class="row idea-list">
+    @foreach (var idea in Model.Ideas)
+    {
+    <div class="idea">
+        <a href="@Url.Action("Details","Ideas",new { id = idea.Id})">
+            <h4>@idea.Name</h4>
+        </a>
+        <a class="link" href="@Url.Action("Details","Ideas",new { id = idea.Id})">
+            <img src="@idea.Image" class="rounded float-left" alt="@idea.Name">
+        </a>
+        <a href="@Url.Action("UserIdeas","Ideas",new { id = idea.FounderId})">
+            <p>by @idea.Founder.CompanyName</p>
+        </a>
+    </div>
+
+     @*<div class="container"    
+        <a href="@  Url.Action("Details","Ideas",new { id = idea.Id})">
+            <h4>@idea.Name</h4>
+            <img src="@idea.Image" class="rounded float-left" alt="@idea.Name">
+        </a>
+        <p>by @idea.Founder.CompanyName</p>
+    </div>*@
+
+
+    @*<div class="col-sm-4 offset-sm-1">
+        <a href="@Url.Action("Details","Ideas",new { id = idea.Id})">
+            <h4>@idea.Name</h4>
+            <img src="@idea.Image" class="rounded float-left" alt="@idea.Name">
+
+        </a>
+   
+        <div class="col-12"><p>by @idea.Founder.CompanyName</p></div>
+    </div>
+       
+        <div class="col-sm-1"></div>
+        
+        <hr/>*@
+
+    }
+</div>
+
+
+@section scripts
+{
+<script>
+        $(document).ready(function () {
+
+            var page = 2;
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if (($(window).scrollTop() == $(document).height() - $(window).height() || document.body.scrollTop == $(document).height() - $(window).height() || document.documentElement.scrollTop == $(document).height() - $(window).height()) && page <=3) {
+                    $.get("/api/ideas", { page: page })
+                        .done((data) => {
+                            Array.from(data).map(idea => {
+                                $('.idea-list').append(`<div class="idea">
+                                                            <a href="/Ideas/Details/${idea.Id}">
+                                                                <h4>${idea.Name}</h4>
+                                                            </a>
+                                                            <a href="/Ideas/Details/${idea.Id}">
+                                                                <img src="${idea.Image}" class="rounded float-left" alt="${idea.Name}">
+                                                            </a>
+                                                            <p>by ${idea.Founder.CompanyName}</p>
+                                                        </div>`);
+                            });
+                            page = page + 1;
+                        })
+                        .fail(function () {
+                            alert("Something Failed");
+                        });
+                    //$.get("/api/ideas/", function (data, status) {
+                    //    console.log(data);
+                    //});
+                }
+                if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+                    document.getElementById("myBtnToTop").style.display = "block";
+                } else {
+                    document.getElementById("myBtnToTop").style.display = "none";
+                }
+            }
+            $('#myBtnToTop').click(() => {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+
+        });
+</script>
+}

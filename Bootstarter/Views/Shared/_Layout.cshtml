@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - BootstarteR </title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <div class="navbar navbar-dark bg-primary navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                @Html.ActionLink("BootStarter", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav">
+                    @if (User.IsInRole("Admin") || User.IsInRole("Founder"))
+                    {
+                        <li class="nav-item">@Html.ActionLink("Add your Project", "Create", "Ideas", null, new { @class = "nav-link" })</li>
+                    }
+                    <li class="nav-item">@Html.ActionLink("Recent Projects", "RecentIdeas", "Ideas", null, new { @class = "nav-link" })</li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        <li>
+                            @Html.ActionLink("My Projects", "MyIdeas", "Ideas", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("My Backings", "MyBackings", "Transactions", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("My Interests", "Index", "Interests", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })
+                        </li>
+                    }
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li>
+                            @Html.ActionLink("Admin Panel", "Index", "Account", routeValues: null, htmlAttributes: new { title = "Manage", @class = "nav-link" })
+                        </li>
+                    }
+                </ul>
+                <div class="dropdown-divider"></div>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <!-- The social media icon bar -->
+    <div class="icon-bar">
+        <a href="https://www.facebook.com" class="facebook nav-link fa fa-facebook-square fa-2x"></a>
+        <a href="https://twitter.com/" class="twitter nav-link fa fa-twitter-square fa-2x"></a>
+        <a href="https://www.instagram.com/" class="google nav-link fa fa-instagram fa-2x"></a>
+        <a href="https://www.linkedin.com/uas/login?" class="linkedin nav-link fa fa-linkedin-square fa-2x"></a>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <footer>
+            <ul class="nav flex-column">
+                <li class="h5">&copy; @DateTime.Now.Year - BootStarter&reg;</li>
+                <li class="nav-item h6">@Html.ActionLink("About", "About", "Home", null, null)</li>
+                <li class="nav-item h6">@Html.ActionLink("Contact", "Contact", "Home", null, null)</li>
+            </ul>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

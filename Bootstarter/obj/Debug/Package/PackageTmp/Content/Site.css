@@ -1,0 +1,243 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select {
+    max-width: 280px;
+}
+
+ 
+#myBtnToTop {
+    display: none;
+    position: fixed;
+    bottom: 21px;
+    right: 28px;
+    z-index: 99;
+    font-size: 24px;
+    border: none;
+    outline: none;
+    background-color: darkcyan;
+    color: oldlace; 
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 16%;
+    opacity: 0.8;
+}
+/*color: whire;*/
+#myBtnToTop:hover {
+    background-color: darkorange;
+}
+
+textarea {
+    resize: none;
+}
+
+.image-index {
+    background-image: url(/UploadedFiles/fundraising-padley1.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 55vh;
+    width: 100%;
+}
+
+.image-bar {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: 100;
+}
+
+.icon-bar {
+  position: fixed;
+  left: 0.5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.7s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.progress16{
+    height: 23px;
+}
+
+
+.idea-list img {
+    max-width: 400px !important;
+    max-height: 300px !important;
+}
+
+.idea-list-recent img {
+    max-width: 400px !important;
+    max-height: 400px !important;
+}
+
+.idea-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.idea {
+    flex: 1 0 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.idea .link {
+    flex: 0 0 300px;
+}
+
+.zoom:hover {
+    transform: scale(1.75);
+    z-index: 100 !important;
+    z-index:999;
+}
+
+/*.zoom:hover {
+  position:relative;
+    
+    width:500px;
+    height:auto;
+    display:block;
+    z-index:999;
+}*/
+
+
+.idea-list-recent {
+    display: flex;
+    flex-direction: column; 
+}
+
+.upper-data {
+    flex: 0 0 85%;
+    display: flex; 
+}
+
+.jimages {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.jimages img {
+    width: auto;
+    height: auto;
+}
+
+.data {
+    flex: 1 0 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lower-data {
+    flex: 0 0 90%;
+    display: flex;
+    color : darkgrey;
+    border-bottom: solid 2px;
+    padding: 8px 15px;
+    margin-top: 5px;
+}
+
+.date-data {
+    flex: 1 0 50px;
+}
+
+.progress-data {
+    flex: 1 0 50px;
+}
+
+.grey-background {
+    background-color: #b8babc;
+    border-radius: 2px;
+    color: black;
+    padding: 3px 8px;
+}
+
+#comments {
+    display:none;
+}
+
+
+@media screen and (max-width: 600px) {
+    .icon-bar {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 400px) {
+    #myBtnToTop {
+        padding: 0;
+        height: 40px;
+        width: 40px;
+        font-size: 12px;
+    }
+
+    .idea .link {
+        flex: 0 0 auto;
+    }
+}
+
+/*@media screen and (max-width: 400px) {
+    img {
+        height: auto;
+        width: 200px;
+        
+    }
+}*/
+

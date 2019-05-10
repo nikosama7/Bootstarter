@@ -1,0 +1,95 @@
+﻿@model Bootstarter.ViewModels.IdeaIndexViewModel
+@{
+    /**/
+    ViewBag.Title = "Search Results";
+}
+
+<h2 class="text-center">@ViewBag.Title</h2>
+<div>
+    @using (Html.BeginForm("Search", "Home", FormMethod.Get, new { @class = "form-inline my-2 my-lg-0" }))
+    {
+        @Html.TextBoxFor(m => m.Search, new { placeholder = "Explore", @id = "search", @class = "form-control mr-sm-4 col-5" })
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit"><i class="fa fa-search"></i></button>
+
+            @Html.LabelFor(m => m.ItemsPerPage, new { @class = "h5 col-sm-2" })
+            @Html.EnumDropDownListFor(m => m.ItemsPerPage, new { @id = "itemsPerPageSelect", @class = "form-control" })
+    
+    }
+</div>
+<br/>
+
+<div class="row idea-list">
+    @foreach (var idea in Model.Ideas)
+    {
+        <div class="col-sm-4 offset-sm-1">
+            <a href="@Url.Action("Details","Ideas",new { id = idea.Id})">
+                <h4>@idea.Name</h4>
+                <img src="@idea.Image" class="rounded float-left" width="100%" alt="@idea.Name">
+                <p>by @idea.Founder.CompanyName</p>
+            </a>
+        </div>
+        <div class="col-sm-1"></div>
+        <hr />
+    }
+</div>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination justify-content-center">
+        @if (Model.CurrentPage == 1)
+        {
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+            </li>
+        }
+        else
+        {
+            <li class="page-item"><a class="page-link" href="@Url.Action("Search", "Home", new { page = Model.CurrentPage-1, itemsPerPage = (int)Model.ItemsPerPage, Search = Model.Search })">Previous</a></li>
+        }
+        @for (int i = 1; i <= Model.TotalPages; i++)
+        {
+            if (i == Model.CurrentPage)
+            {
+                <li class="page-item active" aria-current="page">
+                    <a class="page-link" href="@Url.Action("Search", "Home", new { page = i, itemsPerPage = (int) Model.ItemsPerPage, Search = Model.Search })">@i <span class="sr-only">(current)</span></a>
+                </li>
+            }
+            else
+            {
+                <li class="page-item">
+                    @Html.ActionLink($"{i}", "Search", "Home", new { page = i, itemsPerPage = (int)Model.ItemsPerPage, Search = Model.Search }, new { @class = "page-link" })
+                </li>
+            }
+        }
+        @if (Model.CurrentPage == Model.TotalPages)
+        {
+            <li class="page-item disabled">
+                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Next</a>
+            </li>
+        }
+        else
+        {
+            <li class="page-item"><a class="page-link" href="@Url.Action("Search", "Home", new { page = Model.CurrentPage+1, itemsPerPage = (int)Model.ItemsPerPage, Search = Model.Search })">Next</a></li>
+        }
+    </ul>
+</nav>
+@*<div class="row">
+        @for (int i = 1; i <= Model.TotalPages; i++)
+        {
+            @Html.ActionLink($"{i}", "Index", "Home", new { page = i, itemsPerPage = (int)Model.ItemsPerPage, Search = Model.Search }, new { @class = (i == Model.CurrentPage) ? "active-page page-link-2" : "page-link-2" })
+        }
+    </div>*@
+
+@section scripts
+{
+    <script>
+        window.onload = () => {
+            const itemsPerPageSelect = document.getElementById('itemsPerPageSelect');
+
+            itemsPerPageSelect.onchange = (e) => {
+                e.target.form.submit();
+            }
+
+        };
+    </script>
+}
+

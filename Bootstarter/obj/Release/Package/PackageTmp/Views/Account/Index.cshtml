@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewBag.Title = "Admin Menu (Super Powers)";
+}
+
+<h2 class="text-center text-info">@ViewBag.Title</h2>
+<br/>
+<div class="row">
+    <div class="col-sm-4">
+        @Html.ActionLink("Add a new Admin", "CreateAdmin", "Account", null, new { @class = "nav-link btn btn-info" })
+    </div>
+    <div class="col-sm-4">
+        @Html.ActionLink("Add a new Founder", "CreateFounder", "Account", null, new { @class = "nav-link btn btn-info" })
+    </div>
+    <div class="col-sm-4">
+        @Html.ActionLink("Add a new Donator", "CreateDonator", "Account", null, new { @class = "nav-link btn btn-info" })
+    </div>
+</div>
+<br/>
+<div class="row">
+    <div class="col-sm-4">
+        @Html.ActionLink("View All Ideas", "AllIdeas", "Ideas", null, new { @class = "nav-link btn btn-info" })
+    </div>
+</div>

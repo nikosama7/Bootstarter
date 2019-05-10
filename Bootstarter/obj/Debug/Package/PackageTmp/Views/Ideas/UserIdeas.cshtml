@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Bootstarter.Models.Idea>
+@{
+    ViewBag.Title = "Ideas";
+}
+
+<br />
+<h2 class="text-center text-info">Ideas of @Model.ToList()[0].Founder.CompanyName</h2>
+<br />
+
+<div class="container">
+    @foreach (var idea in Model)
+    {
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="@idea.Image" class="rounded float-left" width="100%" alt="@idea.Name">
+            </div>
+            <div class="col-sm-6">
+                <a href="@Url.Action("Details","Ideas",new { id = idea.Id})"><h3>@idea.Name</h3></a>
+                <p>@idea.Description</p>
+            </div>
+            <div class="col-sm-6">
+                <span>Ends: @idea.EndDate.ToString("dd MMMM yyyy", new System.Globalization.CultureInfo("en-US"))</span>
+            </div>
+            <div class="col-sm-6">
+                <p class="text-right">Goal: @idea.Goal&euro;</p>
+                <div class="progress" style="height:23px">
+                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width:@($"{@idea.MoneyGathered / @idea.Goal / (Math.Floor(@idea.MoneyGathered / @idea.Goal)+1) * 100:F0}")%" aria-valuenow="@($"{@idea.MoneyGathered / @idea.Goal * 100:F0}")" aria-valuemin="0" aria-valuemax="@(Math.Ceiling(@idea.MoneyGathered / @idea.Goal)*100)">@($"{(@idea.MoneyGathered / @idea.Goal * 100):F1}")%</div>
+                </div>
+            </div>
+        </div>
+        <hr />
+    }
+</div>
+
+

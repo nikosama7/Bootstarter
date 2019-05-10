@@ -1,0 +1,129 @@
+﻿@model IEnumerable<Bootstarter.Models.Idea>
+
+@{
+    ViewBag.Title = "Ideas";
+}
+
+<br />
+<h2 class="text-center text-info"><u>Ideas</u></h2>
+<br />
+
+<table class="table">
+    <tr>
+        <th>
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Goal)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MoneyGathered)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Cancelled)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SubmissionDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Founder.CompanyName)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                <img src="@item.Image" height="75px" width="75px" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Goal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.MoneyGathered)
+            </td>
+            <td id="myCheckbox-@item.Id">
+                @if (item.Cancelled)
+                {
+                    <p>Cancelled</p>
+                }
+                else
+                {
+                    <p>Active</p>
+                }
+
+                @*@Html.CheckBoxFor(m => item.Cancelled, new { id = "myCheckbox" })*@
+            </td>
+            <td>
+                @item.SubmissionDate.ToString("dd MMMM yyyy HH:mm:ss", new System.Globalization.CultureInfo("en-US"))
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Founder.CompanyName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                @*@Html.ActionLink("Cancel", "Delete", new { id = item.Id }, new { @class = "js-cancel-idea"})*@
+                @if (!item.Cancelled)
+                {
+                    <a href="#" class="js-cancel-idea" data-idea-id="@item.Id">Cancel</a>
+                }
+
+            </td>
+        </tr>
+    }
+
+</table>
+<br />
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+            $(".js-cancel-idea").click( (e) => {
+                var link = $(e.target);
+
+                bootbox.dialog({
+                    title: 'Confirm Cancel',
+                    message: "<p>Are you sure to cancel this Idea?</p>",
+                    size: 'large',
+                    buttons: {
+                        no: {
+                            label: "No",
+                            className: 'btn-default',
+                            callback: function () {
+                                bootbox.hideAll();
+                            }
+                        },
+                        yes: {
+                            label: "Yes",
+                            className: 'btn-danger',
+                            callback: function () {
+                                $.ajax({
+                                    url: "/api/ideas/" + link.attr("data-idea-id"),
+                                    method: "DELETE"
+                                })
+                                    .done(function () {
+                                        let name = `#myCheckbox-${link.attr("data-idea-id")}`;
+                                        $(name).html("<p>Cancelled</p>");
+                                    })
+                                    .fail(function () {
+                                        alert("Something Failed!");
+                                    });
+                            }
+                        }
+                    }
+                });
+
+            });
+        });
+    </script>
+}
+

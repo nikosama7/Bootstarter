@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Bootstarter.Models.Idea>
+@{
+    ViewBag.Title = "My Interested Projects";
+}
+
+<h2 class="text-center text-info">@ViewBag.Title</h2>
+
+<button id="myBtnToTop" title="Go to top">Top</button>
+
+
+<div class="container idea-list-recent">
+
+</div>
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+
+            $.get("/api/interests")
+                .done((data) => {
+                    Array.from(data).map(idea => {
+                        let datetime = new Date(idea.EndDate);
+                        let options = { year: 'numeric', month: 'long', day: '2-digit' };
+                        $('.idea-list-recent').append(`<div class="upper-data">
+                                            <div class="jimages">
+                                                <img src="${idea.Image}" class="rounded float-left zoom" width="100%" alt="${idea.Name}">
+                                            </div>
+                                            <div class="data">
+                                                <a href="/Ideas/Details/${idea.Id}"><h3>${idea.Name}</h3></a>
+                                                <a href="/Ideas/UserIdeas/${idea.FounderId}">
+                                                    <p>by ${idea.Founder.CompanyName}</p>
+                                                </a>
+                                                <p>${idea.Description}</p>
+                                            </div>
+                                            </div>
+                                            <div class="lower-data">
+                                            <div class="date-data">
+                                                <span>Ends: ${new Intl.DateTimeFormat('en-US', options).format(datetime)}</span>
+                                            </div>
+                                            <div class="progress-data">
+                                                <p class="text-right">Goal: ${idea.Goal} &euro;</p>
+                                                <div class="progress progress16" >
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: ${idea.MoneyGathered / idea.Goal / (Math.floor(idea.MoneyGathered / idea.Goal) + 1) * 100}%" aria-valuenow="${idea.MoneyGathered / idea.Goal * 100}" aria-valuemin="0" aria-valuemax="${Math.ceil(idea.MoneyGathered / idea.Goal) * 100}">${(idea.MoneyGathered / idea.Goal * 100).toFixed(2)}%</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                          <hr/>`);
+                    });
+                })
+                .fail(function () {
+                    alert("Something Failed");
+                });
+           
+            $('#myBtnToTop').click(() => {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+
+        });
+    </script>
+}
+
+
+

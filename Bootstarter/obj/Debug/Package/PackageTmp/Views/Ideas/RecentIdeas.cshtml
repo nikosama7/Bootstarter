@@ -1,0 +1,76 @@
+﻿
+@{
+    ViewBag.Title = "Recent Ideas";
+}
+
+<h2>@ViewBag.Title</h2>
+
+<button id="myBtnToTop" title="Go to top">Top</button>
+
+
+<div class="container idea-list-recent">
+    
+</div>
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+
+            var page = 1;
+            scrollFunction();
+            window.onscroll = function () { scrollFunction() };
+
+            function scrollFunction() {
+                if ($(window).scrollTop() == $(document).height() - $(window).height() || document.body.scrollTop == $(document).height() - $(window).height() || document.documentElement.scrollTop == $(document).height() - $(window).height()) {
+                    $.get("/api/recentIdeas", {page : page})
+                        .done((data) => {
+                            Array.from(data).map(idea => {
+                                let options = {year: 'numeric', month: 'long', day: '2-digit' };
+                                $('.idea-list-recent').append(`<div class="upper-data">
+                                            <div class="jimages">
+                                                <img src="${idea.Image}" class="rounded float-left zoom" width="100%" alt="${idea.Name}">
+                                            </div>
+                                            <div class="data">
+                                                <a href="/Ideas/Details/${idea.Id}"><h3>${idea.Name}</h3></a>
+                                                <p>by <em>${idea.Founder.CompanyName}</em></p>
+                                                <p>${idea.Description}</p>
+                                            </div>
+                                            </div>
+                                            <div class="lower-data">
+                                            <div class="date-data">
+                                                <span>Ends: ${new Intl.DateTimeFormat('en-US', options).format(idea.DateTime)}</span>
+                                            </div>
+                                            <div class="progress-data">
+                                                <p class="text-right">Goal: ${idea.Goal} &euro;</p>
+                                                <div class="progress progress16" >
+                                                    @*<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width:@($"{@Model.Idea.MoneyGathered / @Model.Idea.Goal / (Math.Floor(@Model.Idea.MoneyGathered / @Model.Idea.Goal)+1) * 100:F0}")%" aria-valuenow="@($"{@Model.Idea.MoneyGathered / @Model.Idea.Goal * 100:F0}")" aria-valuemin="0" aria-valuemax="@(Math.Ceiling(@Model.Idea.MoneyGathered / @Model.Idea.Goal)*100)">@($"{(@Model.Idea.MoneyGathered / @Model.Idea.Goal * 100):F1}")%</div>*@
+
+                                                    <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width: ${idea.MoneyGathered / idea.Goal / (Math.floor(idea.MoneyGathered / idea.Goal) + 1) * 100}%" aria-valuenow="${idea.MoneyGathered / idea.Goal * 100}" aria-valuemin="0" aria-valuemax="${Math.ceil(idea.MoneyGathered/idea.Goal)*100}">${(idea.MoneyGathered / idea.Goal * 100).toFixed(2)}%</div>
+                                                    @*<div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" style="width:${idea.MoneyGathered / idea.Goal / (Math.floor(idea.MoneyGathered / idea.Goal)+1) * 100}")%" aria-valuenow="${idea.MoneyGathered / idea.Goal * 100}")" aria-valuemin="0" aria-valuemax="@(Math.Ceiling(@Model.Idea.MoneyGathered / @Model.Idea.Goal)*100)">@($"{(@Model.Idea.MoneyGathered / @Model.Idea.Goal * 100):F1}")%</div>*@
+                                                </div>
+                                            </div>
+                                        </div>
+                                          <hr/>`);
+                            });
+                            page = page + 1;
+                        })
+                        .fail(function () {
+                            alert("Something Failed");
+                        });
+                }
+                if (document.body.scrollTop > 450 || document.documentElement.scrollTop > 450) {
+                    document.getElementById("myBtnToTop").style.display = "block";
+                } else {
+                    document.getElementById("myBtnToTop").style.display = "none";
+                }
+            }
+            $('#myBtnToTop').click(() => {
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            });
+
+        });
+    </script>
+}

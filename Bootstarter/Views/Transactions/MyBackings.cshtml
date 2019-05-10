@@ -1,0 +1,89 @@
+﻿@model IEnumerable<Bootstarter.Models.Transaction>
+@{
+    ViewBag.Title = "My Backings";
+}
+
+<h2 class="text-center text-info">@ViewBag.Title</h2>
+<br />
+@{
+    int i = 1;
+}
+<table class="table table-striped table-bordered table-hover">
+    <thead class="thead-light">
+        <tr class="danger">
+            <th scope="col" class="h3 col-xs-1">#</th>
+            <th scope="col" class="h3 col-xs-4">Project Name</th>
+            <th scope="col" class="h3 col-xs-3">Donated Money</th>
+            <th scope="col" class="h3 col-xs-3">Date of Donation</th>
+            <th scope="col" class="h3 col-xs-1">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var transaction in Model)
+        {
+            <tr id="myCheckbox-@transaction.Id">
+                <th scope="row" class="h3">@i</th>
+                <td class="h3 capitalize">@transaction.Idea.Name</td>
+                <td class="h3 capitalize">@transaction.DonationMoney&euro;</td>
+                <td class="h3 capitalize">@transaction.DonationDate</td>
+                <td>
+                    @if (transaction.DonationDate >= DateTime.Now.AddDays(-1))
+                    {
+                        <a href="#" class="js-cancel-backing" data-transaction-id="@transaction.Id">Cancel</a>
+                    }
+                </td>
+            </tr>
+            i = i + 1;
+        }
+    </tbody>
+</table>
+
+<br/>
+<hr/>
+
+
+@section scripts
+{
+    <script>
+        $(document).ready(function () {
+
+            $(".js-cancel-backing").click( (e) => {
+                var link = $(e.target);
+
+                bootbox.dialog({
+                    title: 'Confirm Cancel',
+                    message: "<p>Are you sure to cancel this Transaction?</p>",
+                    size: 'large',
+                    buttons: {
+                        no: {
+                            label: "No",
+                            className: 'btn-default',
+                            callback: function () {
+                                bootbox.hideAll();
+                            }
+                        },
+                        yes: {
+                            label: "Yes",
+                            className: 'btn-danger',
+                            callback: function () {
+                                $.ajax({
+                                    url: "/api/transactions/" + link.attr("data-transaction-id"),
+                                    method: "DELETE"
+                                })
+                                    .done(function () {
+                                        let name = `#myCheckbox-${link.attr("data-transaction-id")}`;
+                                        $(name).remove();
+                                    })
+                                    .fail(function () {
+                                        alert("Something Failed!");
+                                    });
+                            }
+                        }
+                    }
+                });
+
+            });
+        });
+    </script>
+}
+
