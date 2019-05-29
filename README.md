@@ -1,6 +1,6 @@
 # Bootstarter
 
-This is a team project for Afdemp Coding Bootcamp 7
+This is a team project for Afdemp Coding Bootcamp 7 of 2019.
 
 
-You can visit the web application at http://bootstarter.azurewebsites.net/ (it will be up and running until 5th of June 2019)
+You can visit the web application at http://bootstarter.azurewebsites.net/ (it will be up and running until 5th of June 2019).
