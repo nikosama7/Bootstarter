@@ -3,7 +3,7 @@
 This is a team project for Afdemp Coding Bootcamp 7 of 2019.
 
 
-You can visit the web application at http://bootstarter.azurewebsites.net/ (it will be up and running until 5th of June 2019).
+You can visit the web application at http://bootstarter.azurewebsites.net/.
 
   The application is a crowdfunding site that promotes fresh ideas and let people donate money so the project will continue to develope and expand.
   All the core elements are there, from register and login to adding a photo, a description and the amount of money each project needs. There are 3 roles that are supported in this application. 
